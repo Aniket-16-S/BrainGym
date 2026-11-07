@@ -36,7 +36,7 @@ const S=[
 ["PhET Simulations","https://phet.colorado.edu","make","Free science and maths sims from the University of Colorado.","science, maths, simulations",1,""],
 ["Ciechanowski","https://ciechanow.ski","make","Slow, interactive deep-dives into how lenses, clocks and GPS work.","mechanics, explainers, engineering",1,""],
 ["Quick, Draw!","https://quickdraw.withgoogle.com","make","Doodle fast while an AI tries to guess your drawing.","AI, drawing, game",1,""],
-["Mental Floss Fact Generator","https://www.mentalfloss.com/amazing-fact-generator","wonder","One tap, one strange true fact. Endless trivia.","facts, trivia, random",0,""],
+["Mental Floss Fact Generator","https://www.mentalfloss.com/amazingfactgenerator","wonder","One tap, one strange true fact. Endless trivia.","facts, trivia, random",0,""],
 ["Big Think","https://bigthink.com","wonder","Big ideas from scientists, writers and leaders in short reads and videos.","ideas, articles, science",0,""],
 ["Chronophoto","https://chronophoto.app","wonder","Guess the year of a historic photo and see how close you land.","history, photos, guessing",0,""],
 ["Neal.fun","https://neal.fun","wonder","A playground of weird interactive toys, from deep sea to space scale.","toys, fun, interactive",1,""],

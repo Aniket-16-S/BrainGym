@@ -14,7 +14,8 @@ h1 small{font-size:.58rem;color:var(--mut);border:1px solid var(--ln);padding:2p
 .search{flex:1 1 240px}
 input{width:100%;padding:11px 18px;border-radius:99px;border:1px solid var(--ln);background:var(--pn);color:var(--ink);font:inherit;outline:0;transition:.25s}
 input:focus{border-color:var(--a1);box-shadow:0 0 0 4px color-mix(in srgb,var(--a1) 22%,transparent)}
-.btn,.views button,.chip{border:1px solid var(--ln);background:var(--pn);padding:8px 14px;border-radius:99px;transition:.25s}
+.btn,.views button{border:1px solid var(--ln);background:var(--pn);padding:8px 14px;border-radius:99px;transition:transform .2s ease,box-shadow .2s ease,background .2s ease,border-color .2s ease}
+.chip{border:1px solid var(--ln);background:var(--pn);padding:8px 14px;border-radius:99px;transition:transform .2s ease,box-shadow .2s ease,opacity .2s ease}
 .views{display:flex;gap:6px}
 .btn:hover,.views button:hover,.chip:hover{transform:translateY(-2px);border-color:var(--a1)}
 .views .on,.chip.on{background:linear-gradient(135deg,var(--a1),var(--a2));color:#050816;border-color:transparent;font-weight:600}
@@ -65,8 +66,8 @@ body:not([data-view=galaxy]) #gal{display:none}
 #card.in{opacity:1}
 .holo{position:relative;width:min(92vw,520px);padding:28px;border-radius:26px;overflow:hidden;background:var(--pn);border:1px solid var(--c);backdrop-filter:blur(18px);box-shadow:0 0 60px -12px var(--c),inset 0 0 40px -22px var(--c);transform:scale(.85) translateY(30px) rotateX(18deg);transition:transform .45s cubic-bezier(.2,1.2,.3,1)}
 .in .holo{transform:none}
-.holo::after{content:"";position:absolute;left:0;right:0;top:-80px;height:80px;pointer-events:none;background:linear-gradient(transparent,color-mix(in srgb,var(--c) 38%,transparent),transparent);animation:scan 2.6s linear infinite}
-@keyframes scan{to{top:110%}}
+.holo::after{content:"";position:absolute;left:0;right:0;top:0;height:80px;pointer-events:none;background:linear-gradient(transparent,color-mix(in srgb,var(--c) 38%,transparent),transparent);animation:scan 2.6s linear infinite;will-change:transform}
+@keyframes scan{0%{transform:translateY(-80px)}100%{transform:translateY(560px)}}
 .hd{display:flex;gap:16px;align-items:center;margin-bottom:14px}
 .hd h2{margin:3px 0 0;font-size:1.55rem;line-height:1.15}
 .tg{letter-spacing:.18em;color:var(--c);font-size:.66rem;font-weight:700}
