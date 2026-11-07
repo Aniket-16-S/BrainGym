@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Brain Candy Index — an interactive map of curious corners of the internet</title>
+<meta name="description" content="A futuristic, interactive index of free websites and apps for training, testing and expanding your brain, inspired by the Brain Candy series by AveyTv.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧠</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+<script>try{document.documentElement.dataset.theme=localStorage.theme||(matchMedia("(prefers-color-scheme:light)").matches?"light":"dark")}catch(e){}</script>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-view="galaxy">
+<header>
+  <h1><span>Brain Candy</span><small>INDEX</small></h1>
+  <div class="search"><input id="q" type="search" autocomplete="off" placeholder="Search a topic: memory, bias, physics…  ( / )" aria-label="Search"></div>
+  <nav class="views" aria-label="View">
+    <button class="on" data-v="galaxy">✦ Galaxy</button><button data-v="index">☰ Index</button><button data-v="cards">▣ Cards</button>
+  </nav>
+  <button class="btn" id="rand">🎲 Surprise me</button>
+  <button class="btn" id="theme" aria-label="Toggle light/dark mode">☾</button>
+  <div class="chips" id="chips"></div>
+</header>
+<main>
+  <canvas id="bg"></canvas>
+  <div id="gal">
+    <div id="core"><b>0</b><span></span></div>
+    <div id="hint">Hover to magnify · click a star to open it · filter or search to pull matches into orbit</div>
+  </div>
+  <section class="pane" id="index"><div class="wrap"></div><p class="note">Inspired by AveyTv’s Brain Candy Shorts. Not affiliated. Links open external sites.</p></section>
+  <section class="pane" id="cards"><div class="grid"></div><p class="note">Inspired by AveyTv’s Brain Candy Shorts. Not affiliated. Links open external sites.</p></section>
+</main>
+<div id="card" hidden><div class="holo" role="dialog" aria-modal="true"></div></div>
+<script src="js/data.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
